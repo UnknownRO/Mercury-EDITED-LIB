@@ -1948,7 +1948,9 @@ function Library:color_picker(options)
 				Size = UDim2.fromScale(1, 1),
 				ZIndex = 2
 			}):round(10)
-
+function methods:Visible(bool)
+  buttonContainer.Visible = bool
+end
 
 			if options.Style == 1 then
 				do
