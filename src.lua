@@ -1645,7 +1645,9 @@ function Library:dropdown(options)
 		end)
 		if open then toggle() end
 	end
-
+	function methods:Visible(bool)
+  dropdownContainer.Visible = bool
+end
 	function methods:AddItems(fitems)
 		for i, v in next, fitems do
 			if typeof(v) == "table" then
